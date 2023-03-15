@@ -64,7 +64,6 @@ city_country.innerHTML= `
 <p>hyderabad</p>
 <p>Delhi</p>
 <p>uttar pradesh</p>
-<p>Delhi</p>
 <p>Chennai</p>
 <p>Pune</p>
 <p>Ahmedabad</p>
