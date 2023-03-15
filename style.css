@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main{
+main {
     background-color: #9addff;
     min-height: 100vh;
     display: flex;
@@ -14,12 +14,14 @@ main{
     padding: 10px;
     padding-top: 70px;
 }
-main img{
+
+main img {
     width: 70px;
     height: 70px;
     border-radius: 20px;
 }
-.row.details{
+
+.row.details {
     display: flex;
     justify-content: center;
     gap: 12px;
@@ -27,23 +29,37 @@ main img{
     margin-top: 20px;
 }
 
-.row input{
+.row input {
     font-size: 25px;
     border-radius: 10px;
     padding: 5px;
     border: none;
     outline: none;
+    width: 100%;
+}
+
+.row form {
+    position: relative;
+}
+
+.row #searchIcon {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 
 /* ---------------------------------- */
-.city_country{
+.city_country {
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-.city_country p{
+
+.city_country p {
     display: inline-block;
     padding: 5px 8px;
     background-color: black;
@@ -54,7 +70,8 @@ main img{
     /* font-weight: bold; */
     /* margin-right: 10px; */
 }
-.city_country p:hover{
+
+.city_country p:hover {
     background-color: white;
     color: black;
 }

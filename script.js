@@ -5,6 +5,7 @@ const API_KEY = `3265874a2c77ae4a04bb96236a642d2f`;
 const form = document.querySelector('form');
 const search = document.querySelector('#search');
 const weather = document.querySelector('#wheather');
+const searchIcon = document.querySelector('#searchIcon');
 
 const getWheather = async (city) =>{
     weather.innerHTML=`<h1>Loading...</h1>`;
@@ -45,6 +46,15 @@ form.addEventListener('submit' , function(event){
     search.value = '';
     console.log('submit');
 })
+
+// ---
+
+searchIcon.addEventListener('click' , function(){
+    getWheather(search.value);
+    search.value = '';
+})
+
+
 
 // ------------------------------------------------------
 
